@@ -1,0 +1,103 @@
+.container_ip{
+    height: max-content;
+    
+}
+.storage{
+    height: max-content;
+    padding-left: 30px;
+    display: flex;
+}
+.storage input{
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+}
+.custom-input::placeholder {
+    color: white; 
+    opacity: 1;
+  }
+.storage button{
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100px;
+}
+.storage button:active{
+    background-color: white;
+    color: black;
+}
+.div{
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+}
+.message_container{
+    height: 400px;
+    width: 40vw;
+    background-color: black;
+    margin-top: 200px;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#received_msg{
+    width: max-content;
+}
+#message_input{
+    color: black;
+    width: 200px;
+    margin-left: 10px;
+    border: 2px solid white;
+    bottom: 10px;
+}
+#message_input::placeholder{
+    color: black;
+}
+.button_container{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+#receiver_input::placeholder{
+    color: black;
+}
+#receiver_input{
+    justify-self: center;
+    align-self: center;
+}
+@media screen and (max-width:1253px) {
+    .storage{
+        flex-direction: column;
+        padding: 0;
+    }
+    .storage input{
+        margin: 20px;
+    }
+    .storage button{
+        margin: 20px;
+    }
+    .container_ip{
+        width: 100vw;
+    }
+    .div{
+        padding: 0;
+    }
+    .message_container{
+        width: 100vw;
+    }
+    .button_container{
+        left: 0px;
+    }
+    .button_container button{
+        margin-top: 10px;
+    }
+    #receiver_input{
+        margin-left: 10px;
+    }
+}
